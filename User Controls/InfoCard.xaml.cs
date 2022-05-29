@@ -37,15 +37,15 @@ namespace UIProfit.User_Controls
 
 
 
-        public int Number
+        public string Number
         {
-            get { return (int)GetValue(NumberProperty); }
+            get { return (string)GetValue(NumberProperty); }
             set { SetValue(NumberProperty, value); }
         }
 
         // Using a DependencyProperty as the backing store for Number.  This enables animation, styling, binding, etc...
         public static readonly DependencyProperty NumberProperty =
-            DependencyProperty.Register("Number", typeof(int), typeof(InfoCard));
+            DependencyProperty.Register("Number", typeof(string), typeof(InfoCard));
 
 
 
@@ -57,7 +57,7 @@ namespace UIProfit.User_Controls
 
         // Using a DependencyProperty as the backing store for Icon.  This enables animation, styling, binding, etc...
         public static readonly DependencyProperty IconProperty =
-            DependencyProperty.Register("Icon", typeof(string), typeof(IconChar));
+            DependencyProperty.Register("Icon", typeof(IconChar), typeof(InfoCard));
 
 
 
@@ -69,7 +69,7 @@ namespace UIProfit.User_Controls
 
         // Using a DependencyProperty as the backing store for BackGroundColor.  This enables animation, styling, binding, etc...
         public static readonly DependencyProperty BackGroundColorProperty =
-            DependencyProperty.Register("BackGroundColor", typeof(Color), typeof(Color));
+            DependencyProperty.Register("BackGroundColor", typeof(Color), typeof(InfoCard));
 
 
 
@@ -81,7 +81,7 @@ namespace UIProfit.User_Controls
 
         // Using a DependencyProperty as the backing store for BackGround2Color.  This enables animation, styling, binding, etc...
         public static readonly DependencyProperty BackGround2ColorProperty =
-            DependencyProperty.Register("BackGround2Color", typeof(Color), typeof(Color));
+            DependencyProperty.Register("BackGround2Color", typeof(Color), typeof(InfoCard));
 
 
 
@@ -95,7 +95,7 @@ namespace UIProfit.User_Controls
 
         // Using a DependencyProperty as the backing store for EllipseBackGroundColor.  This enables animation, styling, binding, etc...
         public static readonly DependencyProperty EllipseBackGroundColorProperty =
-            DependencyProperty.Register("EllipseBackGroundColor", typeof(Color), typeof(Color));
+            DependencyProperty.Register("EllipseBackGroundColor", typeof(Color), typeof(InfoCard));
 
 
 
@@ -111,7 +111,7 @@ namespace UIProfit.User_Controls
 
         // Using a DependencyProperty as the backing store for EllipseBackGroundColor2.  This enables animation, styling, binding, etc...
         public static readonly DependencyProperty EllipseBackGroundColor2Property =
-            DependencyProperty.Register("EllipseBackGroundColor2", typeof(Color), typeof(Color));
+            DependencyProperty.Register("EllipseBackGroundColor2", typeof(Color), typeof(InfoCard));
 
 
 

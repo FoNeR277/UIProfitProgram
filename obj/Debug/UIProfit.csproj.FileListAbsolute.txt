@@ -17,3 +17,6 @@ D:\vs projects\UIProfit\obj\Debug\UIProfit.pdb
 D:\vs projects\UIProfit\bin\Debug\FontAwesome.Sharp.dll
 D:\vs projects\UIProfit\obj\Debug\UIProfit.csproj.CopyComplete
 D:\vs projects\UIProfit\obj\Debug\App.baml
+D:\vs projects\UIProfit\obj\Debug\User Controls\InfoCard.baml
+D:\vs projects\UIProfit\obj\Debug\User Controls\InfoCard.g.cs
+D:\vs projects\UIProfit\obj\Debug\GeneratedInternalTypeHelper.g.cs

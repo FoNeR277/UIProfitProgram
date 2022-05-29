@@ -3,7 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:UIProfit"
+        xmlns:uc="clr-namespace:UIProfit.User_Controls"
         xmlns:fa="http://schemas.awesome.incremented/wpf/xaml/fontawesome.sharp"
         mc:Ignorable="d" Height="740" Width="1280"
         AllowsTransparency="True" Background="Transparent"
@@ -179,7 +179,15 @@
                         <ColumnDefinition Width="*"/>
                     </Grid.ColumnDefinitions>
 
-
+                    <uc:InfoCard Grid.Column="0" Title="Total Views" Number="654,947" Icon="Eye"
+                                 BackGroundColor="#827bff" BackGround2Color="#d9b5ff" EllipseBackGroundColor="#b298fd" 
+                                 EllipseBackGroundColor2="#e4bbff"/>
+                    <uc:InfoCard Grid.Column="1" Title="Total Orders" Number="154,562" Icon="ShoppingCart"
+                                 BackGroundColor="#8d8a87" BackGround2Color="#f3ab92" EllipseBackGroundColor="#fbd5a8" 
+                                 EllipseBackGroundColor2="#fdb89b"/>
+                    <uc:InfoCard Grid.Column="2" Title="Total Revenue" Number="$14,547" Icon="Coins"
+                                 BackGroundColor="#fc84cb" BackGround2Color="#fc8fae" EllipseBackGroundColor="#fc8fae" 
+                                 EllipseBackGroundColor2="#e4bbff"/>
                 </Grid>
             </Grid>
         </Border>
