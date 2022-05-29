@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:uc="clr-namespace:UIProfit.User_Controls"
         xmlns:fa="http://schemas.awesome.incremented/wpf/xaml/fontawesome.sharp"
-        xmlns:or="clr-namespace:UIProfit.User_Controls"
+        xmlns:lvc="clr-namespace:LiveCharts;assembly=LiveCharts.Wpf"
+        xmlns:wpf="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
         mc:Ignorable="d" Height="740" Width="1280"
         AllowsTransparency="True" Background="Transparent"
         WindowStyle="none" WindowStartupLocation="CenterScreen">
@@ -199,7 +200,89 @@
 
                     <!--Chart Section-->
                     <Border CornerRadius="20" Padding="35 25" Background="#243771" Margin="50 0 10 40">
-                        
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+
+                            <StackPanel Orientation="Horizontal" Margin="0 0 0 25">
+                                <fa:IconImage Icon="Circle" Style="{StaticResource TitleIcon}"/>
+                                <TextBlock Text="Profit" Style="{StaticResource TitleText}"/>
+                            </StackPanel>
+
+                            <StackPanel HorizontalAlignment="Left"
+                                        VerticalAlignment="Bottom"
+                                        Margin="0 0 0 25"
+                                        Grid.Row="1">
+                                <TextBlock Text="70000" Foreground="#717eb2" Margin="0 0 0 25"/>
+                                <TextBlock Text="60000" Foreground="#717eb2" Margin="0 0 0 25"/>
+                                <TextBlock Text="50000" Foreground="#717eb2" Margin="0 0 0 25"/>
+                                <TextBlock Text="40000" Foreground="#717eb2" Margin="0 0 0 25"/>
+                                <TextBlock Text="30000" Foreground="#717eb2" Margin="0 0 0 25"/>
+                                <TextBlock Text="20000" Foreground="#717eb2" Margin="0 0 0 25"/>
+                                <TextBlock Text="10000" Foreground="#717eb2" Margin="0 0 0 25"/>
+                                <TextBlock Text="0" Foreground="#717eb2" HorizontalAlignment="Right"/>
+                            </StackPanel>
+                            <StackPanel HorizontalAlignment="Center"
+                                        VerticalAlignment="Bottom"
+                                        Orientation="Horizontal"
+                                        Margin="0 0 0 25"
+                                        Grid.Row="1">
+                                <TextBlock Text="1" Foreground="#717eb2" Margin="41 0 0 0"/>
+                                <TextBlock Text="2" Foreground="#717eb2" Margin="41 0 0 0"/>
+                                <TextBlock Text="3" Foreground="#717eb2" Margin="41 0 0 0"/>
+                                <TextBlock Text="4" Foreground="#717eb2" Margin="41 0 0 0"/>
+                                <TextBlock Text="5" Foreground="#717eb2" Margin="41 0 0 0"/>
+                                <TextBlock Text="6" Foreground="#717eb2" Margin="41 0 0 0"/>
+                                <TextBlock Text="7" Foreground="#717eb2" Margin="41 0 0 0"/>
+                                <TextBlock Text="8" Foreground="#717eb2" Margin="41 0 0 0"/>
+                                <TextBlock Text="9" Foreground="#717eb2" Margin="41 0 0 0"/>
+                                <TextBlock Text="10" Foreground="#717eb2" Margin="41 0 0 0"/>
+                                <TextBlock Text="11" Foreground="#717eb2" Margin="41 0 0 0"/>
+                                <TextBlock Text="12" Foreground="#717eb2" Margin="41 0 0 0"/>
+                            </StackPanel>
+
+                            <!--Chart-->
+                            <wpf:CartesianChart Grid.Row="1" Margin="45 0 0 25">
+                                <wpf:CartesianChart.Background>
+                                    <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                                        <GradientStop Color="#26376f" Offset="0"/>
+                                        <GradientStop Color="#6a6ae4" Offset="1.5"/>
+                                    </LinearGradientBrush>
+                                </wpf:CartesianChart.Background>
+
+                                <wpf:CartesianChart.AxisX>
+                                    <wpf:Axis MinValue="1" MaxValue="5" Foreground="#717eb2" ShowLabels="False">
+                                        <wpf:Axis.Separator>
+                                            <wpf:Separator StrokeThickness="0"/>
+                                        </wpf:Axis.Separator>
+                                    </wpf:Axis>
+                                </wpf:CartesianChart.AxisX>
+
+                                <wpf:CartesianChart.AxisY>
+                                    <wpf:Axis MinValue="0" MaxValue="60000" Foreground="#717eb2" ShowLabels="False">
+                                        <wpf:Axis.Separator>
+                                            <wpf:Separator StrokeThickness="0"/>
+                                        </wpf:Axis.Separator>
+                                    </wpf:Axis>
+                                </wpf:CartesianChart.AxisY>
+
+                                <wpf:CartesianChart.Series>
+                                    <wpf:LineSeries Stroke="#ada4fd" StrokeThickness="2" PointGeometrySize="0"
+                                                    Values="20000, 17000, 30000, 15000, 50000, 30000, 20000">
+                                        <wpf:LineSeries.Fill>
+                                            <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5, 1">
+                                                <GradientStop Color="#b397e2" Offset="0.4"/>
+                                                <GradientStop Color="#6a6ae4" Offset="1.2"/>
+                                            </LinearGradientBrush>
+                                        </wpf:LineSeries.Fill>
+                                    </wpf:LineSeries>
+                                </wpf:CartesianChart.Series>
+                            </wpf:CartesianChart>
+                            
+
+                        </Grid>
                     </Border>
 
                     <!--Orders Section-->

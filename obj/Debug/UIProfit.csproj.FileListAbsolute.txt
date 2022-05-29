@@ -22,3 +22,9 @@ D:\vs projects\UIProfit\obj\Debug\User Controls\InfoCard.g.cs
 D:\vs projects\UIProfit\obj\Debug\GeneratedInternalTypeHelper.g.cs
 D:\vs projects\UIProfit\obj\Debug\User Controls\Order.baml
 D:\vs projects\UIProfit\obj\Debug\User Controls\Order.g.cs
+D:\vs projects\UIProfit\bin\Debug\LiveCharts.dll
+D:\vs projects\UIProfit\bin\Debug\LiveCharts.Wpf.dll
+D:\vs projects\UIProfit\bin\Debug\LiveCharts.pdb
+D:\vs projects\UIProfit\bin\Debug\LiveCharts.xml
+D:\vs projects\UIProfit\bin\Debug\LiveCharts.Wpf.pdb
+D:\vs projects\UIProfit\bin\Debug\LiveCharts.Wpf.xml
