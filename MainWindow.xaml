@@ -210,8 +210,13 @@
                             </Grid.RowDefinitions>
 
                             <StackPanel Orientation="Horizontal" Margin="20 0 0 15">
-                                <fa:IconImage Icon="Circle"/>
-                                <TextBlock Text="Last Orders"/>
+                                <fa:IconImage Icon="Circle" Style="{StaticResource TitleIcon}"/>
+                                <TextBlock Text="Last Orders" Style="{StaticResource TitleText}"/>
+                            </StackPanel>
+
+                            <!--Orders-->
+                            <StackPanel Grid.Row="1">
+
                             </StackPanel>
                         </Grid>
                     </Border>
