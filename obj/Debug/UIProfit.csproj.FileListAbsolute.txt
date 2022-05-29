@@ -20,3 +20,5 @@ D:\vs projects\UIProfit\obj\Debug\App.baml
 D:\vs projects\UIProfit\obj\Debug\User Controls\InfoCard.baml
 D:\vs projects\UIProfit\obj\Debug\User Controls\InfoCard.g.cs
 D:\vs projects\UIProfit\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\vs projects\UIProfit\obj\Debug\User Controls\Order.baml
+D:\vs projects\UIProfit\obj\Debug\User Controls\Order.g.cs

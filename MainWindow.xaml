@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:uc="clr-namespace:UIProfit.User_Controls"
         xmlns:fa="http://schemas.awesome.incremented/wpf/xaml/fontawesome.sharp"
+        xmlns:or="clr-namespace:UIProfit.User_Controls"
         mc:Ignorable="d" Height="740" Width="1280"
         AllowsTransparency="True" Background="Transparent"
         WindowStyle="none" WindowStartupLocation="CenterScreen">
@@ -216,7 +217,10 @@
 
                             <!--Orders-->
                             <StackPanel Grid.Row="1">
-
+                                <uc:Order Title="T-Shirt Embrace" Desc="Deniska Rediska - 11:35" Icon="Tshirt"/>
+                                <uc:Order Title="Shoes Kamion" Desc="Karim Penci - 12:00" Icon="ShoePrints"/>
+                                <uc:Order Title="Socks Beseze" Desc="Mari - 12:00" Icon="Socks"/>
+                                <uc:Order Title="Hat jackman" Desc="Jack Praide - 14:20" Icon="HardHat"/>
                             </StackPanel>
                         </Grid>
                     </Border>
